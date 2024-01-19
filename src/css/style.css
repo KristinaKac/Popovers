@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    position: relative;
+    padding: 10px 15px;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #b72c3a;
+}
+
+.btn:focus {
+    background-color: #b72c3a;
+}
+
+.popover {
+    position: absolute;
+    z-index: 999;
+    max-width: 200px;
+    background: #fff;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 7px;
+}
